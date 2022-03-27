@@ -2,6 +2,10 @@
 <Project Type="Project" LVVersion="20008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.Project.Description" Type="Str"></Property>
+	<Property Name="varPersistentID:{0AB56AF3-F299-430B-930E-F48B905897C9}" Type="Ref">/Target/Team Code/Periodic Tasks.vi/One Shot Rising with Input/input</Property>
+	<Property Name="varPersistentID:{B63D231A-67A5-4D67-9666-7E57112E257D}" Type="Ref">/Target/Team Code/Periodic Tasks.vi/One Shot Rising with Input/output</Property>
+	<Property Name="varPersistentID:{BB70DB90-DA68-4C60-83D8-05BB86308915}" Type="Ref">/Target/Team Code/Periodic Tasks.vi/One Shot Rising with Input/error in</Property>
+	<Property Name="varPersistentID:{CA05A639-BDC9-4E55-A7B9-22484E114244}" Type="Ref">/Target/Team Code/Periodic Tasks.vi/One Shot Rising with Input/error out</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -104,7 +108,15 @@ AddOutputFilter chunkFilter
 			<Item Name="Begin.vi" Type="VI" URL="../Begin.vi"/>
 			<Item Name="Disabled.vi" Type="VI" URL="../Disabled.vi"/>
 			<Item Name="Finish.vi" Type="VI" URL="../Finish.vi"/>
-			<Item Name="Periodic Tasks.vi" Type="VI" URL="../Periodic Tasks.vi"/>
+			<Item Name="Global1.vi" Type="VI" URL="../../../../Dropbox/Team 1610/2022/Programming/2022 Labview/Global1.vi"/>
+			<Item Name="Periodic Tasks.vi" Type="VI" URL="../Periodic Tasks.vi">
+				<Item Name="One Shot Rising with Input" Type="IIO Function Block">
+					<Item Name="error in" Type="Variable"/>
+					<Item Name="error out" Type="Variable"/>
+					<Item Name="input" Type="Variable"/>
+					<Item Name="output" Type="Variable"/>
+				</Item>
+			</Item>
 			<Item Name="Robot Global Data.vi" Type="VI" URL="../Robot Global Data.vi"/>
 			<Item Name="Teleop.vi" Type="VI" URL="../Teleop.vi"/>
 			<Item Name="Test.vi" Type="VI" URL="../Test.vi"/>
@@ -657,7 +669,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToProject</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{6782B190-04E1-4A41-93AB-3F357B35791E}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">45</Property>
+				<Property Name="Bld_version.build" Type="Int">60</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
